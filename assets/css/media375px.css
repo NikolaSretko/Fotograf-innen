@@ -1,0 +1,11 @@
+@media screen and (max-width:375px) {
+    
+    .gallery div p {
+        display: block;
+        
+    }
+
+    footer nav {
+        margin-bottom: 180px;
+    }
+}

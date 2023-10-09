@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+:focus {
+    outline: none ;
+}
+
+html {
+    font-family: "Roboto";
+    --color-primary: #212529;
+    --color-background: #ebeae9;
+    --color--background-footer: #afafaf;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+  /* ================ TEXT ================ */
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1.2rem;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+p {
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    font-size: 1rem;
+}
+
+
+
+/* ============= NAVBAR ====================*/
+
+header {
+    padding-inline: 5%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+header nav img {
+    width: 30px;
+}
+
+  /* ============== HERO ===================== */
+
+main {
+    padding-inline: 5%;
+}
+
+article h1 {
+    margin-top: 100px;
+    max-width: 1000px;
+}
+
+article p {
+    padding-block: 50px;
+    max-width: 1000px;
+}
+
+  /* =============== GALERY ======================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.gallery div img {
+    max-width: 100%;
+}
+
+.gallery div p {
+    display: none;
+    padding-bottom: 36px;
+}
+
+  /* =============== FOOTER ================= */
+footer {
+    background-color: var(--color--background-footer);
+    padding-inline: 5% ;
+    padding-block: 115px;
+}
+
+footer nav {
+    display: flex;
+    gap: 180px;
+    height: 108px;
+}
+
+
+footer nav a {
+    display: block;
+    width: 200px;
+}
+
+footer > h1 {
+    text-align: center;
+    padding: 48px 0;
+}
+
+form {
+    width: 600px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.25em;
+    width: 100%;
+}
+
+.form label {
+    padding-top: 4px;
+    display: block;
+    padding-bottom: 8px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding-block: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--color--background-footer);
+    padding-block: 5px;
+}
+
+input[class="but"] {
+    margin-top: 8px;
+}
+
+/* -------------------------------
+                EFFEKTE               
+    ------------------------------*/
+
+.gallery div a img {
+    transition: opacity 1s;
+}
+.gallery div a img:hover {
+    opacity: 0.5;
+}
